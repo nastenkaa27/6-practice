@@ -1,0 +1,61 @@
+1)
+def nested_sum(t)
+    s = 0
+    for i in t
+        s += sum(i)
+    return(t)
+
+2) 
+a=[3,5,7,9]
+def cumsum(a):
+	s = []
+	Sum = 0
+	for i in range(len(a)):
+		Sum += t[i]
+		s.append(Sum)
+	return(s)
+print(cumsum(a))
+
+3)
+def middle(a):
+    return a[1:-1]
+
+a = input(' ').split()
+
+print(middle(a))
+
+4)
+def chop(a):
+    a.pop(len(a)-1)
+    a.pop(0)
+
+a = input(' ').split()
+print(a)
+chop(a)
+print(a)
+
+5)
+def is_sorted(a):
+    if(sorted(a) == a):
+        return True
+    return False
+a = input(' ').split()
+print(is_sorted(a))
+
+6)
+def is_anagram(word1,word2):
+    w1= sorted(word1)
+    w2= sorted(word2)
+    return w1==w2
+r1 = input()
+r2 = input()
+print(is_anagram(r1, r2))
+
+7)
+def has_duplicates(a):
+    if(len(a)!=len(set(a))):
+        return False
+    return True
+
+a = input(' ').split()
+print(has_duplicates(a))
